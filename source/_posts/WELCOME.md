@@ -15,4 +15,4 @@ tags:
 [CS @ cnblog](https://www.cnblogs.com/galoisfield)
 
 
-[APPLICATION @ zhihu](https://www.zhihu.com/people/Username_)
+[INFORMATION4ERROR @ zhihu](https://www.zhihu.com/people/Username_)
