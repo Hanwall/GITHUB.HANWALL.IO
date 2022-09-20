@@ -46,7 +46,7 @@
 
   <title> | LIFE STYLE
 </title>
-  
+
 
 
 
@@ -131,7 +131,7 @@
 </div>
     </header>
 
-    
+
   <div class="back-to-top">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
@@ -141,16 +141,16 @@
     <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          
-  
-  
+
+
+
 
           <div class="content page posts-expand">
-            
 
-    
-    
-    
+
+
+
+
     <div class="post-block" lang="default">
       <header class="post-header">
 
@@ -158,20 +158,21 @@
 </h1>
 
 <div class="post-meta">
-  
+
 
 </div>
 
 </header>
 
-      
-      
-      
+
+
+
       <div class="post-body">
           <h2 id="这是一個不存在的页面"><a href="#这是一個不存在的页面" class="headerlink" title="这是一個不存在的页面"></a>这是一個不存在的页面</h2><p>对不起，您所访问的页面不存在或者已删除。</p>
-<p>预计将在约 <span id="timeout">5</span> 秒后返回首页。</p>
+<p>预计将在约 <span id="timeout">10</span> 秒后返回首页。</p>
 <p>当然，你可以 <strong><a href="/">点这里</a></strong> 直接返回首页。</p>
 <script>
+
 let countTime = 10;
 
 function count() {
@@ -179,7 +180,12 @@ function count() {
   document.getElementById('timeout').textContent = countTime;
   countTime -= 1;
   if(countTime === 0){
-    location.href = '/';
+    if (window.location.href.match("WORKFLOWS4COMPANY" == 0)){
+        location.href = '/';
+    }else{
+        location.href = '/WORKFLOWS4COMPANY';
+    }
+
   }
   setTimeout(() => {
     count();
@@ -190,19 +196,19 @@ count();
 </script>
 
       </div>
-      
-      
-      
-    </div>
-    
 
-    
-    
-    
+
+
+    </div>
+
+
+
+
+
 
 
           </div>
-          
+
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -227,8 +233,8 @@ count();
 </script>
 
         </div>
-          
-  
+
+
   <div class="toggle sidebar-toggle">
     <span class="toggle-line toggle-line-first"></span>
     <span class="toggle-line toggle-line-middle"></span>
@@ -262,7 +268,7 @@ count();
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
-        
+
           <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">posts</span>
         </a>
@@ -284,13 +290,13 @@ count();
 
     <footer class="footer">
       <div class="footer-inner">
-        
 
-        
+
+
 
 <div class="copyright">
-  
-  &copy; 
+
+  &copy;
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
@@ -300,7 +306,7 @@ count();
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
   </div>
 
-        
+
 
 
 
@@ -313,7 +319,7 @@ count();
     </footer>
   </div>
 
-  
+
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
@@ -331,7 +337,6 @@ count();
 
 
 
-  
 
 
 
@@ -347,9 +352,10 @@ count();
 
 
 
-  
 
-  
+
+
+
 
 </body>
 </html>
