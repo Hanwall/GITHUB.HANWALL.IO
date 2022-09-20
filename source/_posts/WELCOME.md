@@ -12,17 +12,10 @@ tags:
 
 # LINKS
 
-[CS @ cnblog](https://www.cnblogs.com/galoisfield)
+[CS @ CNBLOGS](https://www.cnblogs.com/galoisfield)
 
 
-[INFORMATION4ERROR @ zhihu](https://www.zhihu.com/people/Username_)
+[INFORMATION4ERROR @ ZHIHU](https://www.zhihu.com/people/Username_)
 
 
-
-[csdn](#)
-[oschina](#)
-[gitee](#)
-[gitcodeup](#)
-[github](#)
-[gitlab](#)
-[bitbucket](#)
+[WORKFLOWS4COMPANY @GITHUB](./WORKFLOWS4COMPANY)
