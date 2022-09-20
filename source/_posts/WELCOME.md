@@ -4,7 +4,7 @@ date: 2022-09-16 17:37:47
 tags:
 ---
 
-# LIFE IS MEANINGLESS
+# LIFE IS MEANINGLESS, JUST KEEP IT SIMPLE......
 
 ![](../resources/hello.jpeg)
 
@@ -16,3 +16,13 @@ tags:
 
 
 [INFORMATION4ERROR @ zhihu](https://www.zhihu.com/people/Username_)
+
+
+
+[csdn](#)
+[oschina](#)
+[gitee](#)
+[gitcodeup](#)
+[github](#)
+[gitlab](#)
+[bitbucket](#)
