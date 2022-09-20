@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="国内程序员博客网站很多，著名有 cnblog, csdn, oschina这样的。使用blog其实有很多选择:  去上面的网站直接写博客就行了。（喜欢折腾） 自己搭建服务器 自己购买服务器或者云主机搭建。（穷逼） 本地搭建服务器用动态域名解析。（不能关机） 使用一些免费的云服务搭建，比如Openshift。（速度感觉好蛋疼，而且v3版本的操作感觉有些复杂） 使用GitHub的GitHub Page">
+<meta property="og:type" content="website">
+<meta property="og:title" content="在github搭建blog">
+<meta property="og:url" content="http://example.com/backup/2018-11-15@%E5%9C%A8github%E6%90%AD%E5%BB%BAblog.html">
+<meta property="og:site_name" content="LIFE STYLE">
+<meta property="og:description" content="国内程序员博客网站很多，著名有 cnblog, csdn, oschina这样的。使用blog其实有很多选择:  去上面的网站直接写博客就行了。（喜欢折腾） 自己搭建服务器 自己购买服务器或者云主机搭建。（穷逼） 本地搭建服务器用动态域名解析。（不能关机） 使用一些免费的云服务搭建，比如Openshift。（速度感觉好蛋疼，而且v3版本的操作感觉有些复杂） 使用GitHub的GitHub Page">
+<meta property="og:locale">
+<meta property="article:published_time" content="2018-10-24T09:52:33.000Z">
+<meta property="article:modified_time" content="2022-09-14T06:59:51.087Z">
+<meta property="article:tag" content="BLOG">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/backup/2018-11-15@%E5%9C%A8github%E6%90%AD%E5%BB%BAblog">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : false,
+    lang   : 'default'
+  };
+</script>
+
+  <title>在github搭建blog | LIFE STYLE
+</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">LIFE STYLE</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+  
+  
+
+          <div class="content page posts-expand">
+            
+
+    
+    
+    
+    <div class="post-block" lang="default">
+      <header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">在github搭建blog
+</h1>
+
+<div class="post-meta">
+  
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <p>国内程序员博客网站很多，著名有 cnblog, csdn, oschina这样的。使用blog其实有很多选择:</p>
+<ul>
+<li>去上面的网站直接写博客就行了。（喜欢折腾）</li>
+<li>自己搭建服务器</li>
+<li>自己购买服务器或者云主机搭建。（穷逼）</li>
+<li>本地搭建服务器用动态域名解析。（不能关机）</li>
+<li>使用一些免费的云服务搭建，比如Openshift。（速度感觉好蛋疼，而且v3版本的操作感觉有些复杂）</li>
+<li>使用GitHub的GitHub Pages功能来搭建。（主要是方便听说很好用。喜欢折腾的）</li>
+</ul>
+<p>官方对GitHub Pages的定义是Hosted directly from your GitHub repository. Just edit, push, and your changes are live。</p>
+<p>基础环境<br>OS:Window 10 + Debian Bash</p>
+<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install git</span><br></pre></td></tr></table></figure>
+
+<h3 id="去github-创建项目，项目命名格式必须遵守：username-github-io，username是你的用户名。添加一个index页面，"><a href="#去github-创建项目，项目命名格式必须遵守：username-github-io，username是你的用户名。添加一个index页面，" class="headerlink" title="去github 创建项目，项目命名格式必须遵守：username.github.io，username是你的用户名。添加一个index页面，"></a>去github 创建项目，项目命名格式必须遵守：username.github.io，username是你的用户名。添加一个index页面，</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$  git <span class="built_in">clone</span> YOUR_REPOSITORY_URL</span><br><span class="line">$  <span class="built_in">echo</span> <span class="string">&quot;test page&quot;</span> &gt; index.md</span><br><span class="line">$  git add -A</span><br><span class="line">$  git commit -m <span class="string">&quot;add index page&quot;</span></span><br><span class="line">$  git push orign master</span><br><span class="line"><span class="comment">#提交好之后就已经发布到网络了，</span></span><br><span class="line"><span class="comment">#你可以通过https://username.github.io来访问了。在项目Setttings可以看到GitHub Pages功能模块，在这里可以修改相关设置，比如自定义域名。</span></span><br><span class="line"><span class="comment">#github 默认使用 Jekyll构建你的博客。你可以自己选择其它的。目前比较流行的是hexo.</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="安装Hexo-需要node-js"><a href="#安装Hexo-需要node-js" class="headerlink" title="安装Hexo,需要node.js"></a>安装Hexo,需要node.js</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#去node.js官网https://nodejs.org/en/下载源码安装,这里需要注意hexo有版本要求，我用的最新的。</span></span><br><span class="line">$ wget https://nodejs.org/dist/v8.12.0/node-v8.12.0-linux-x64.tar.xz</span><br><span class="line"><span class="comment">#然后这里的文件后缀是tar.xz,需要安装解压工具</span></span><br><span class="line">$ sudo apt-get install xz-utils</span><br><span class="line">$ <span class="built_in">chmod</span> 775 ./node-v8.12.0-linux-x64.tar.xz</span><br><span class="line">$ tar xvJf node-v8.12.0-linux-x64.tar.xz</span><br><span class="line">$ sudo <span class="built_in">mv</span>  ./node-v8.12.0-linux-x64 /opt</span><br><span class="line"><span class="comment">#修改path</span></span><br><span class="line">$ vi ~/.bashrc</span><br><span class="line">$ <span class="built_in">export</span>=<span class="variable">$PATH</span>:/opt/node-v8.12.0-linux-x64/bin</span><br><span class="line"><span class="comment">#立即生效</span></span><br><span class="line">$ <span class="built_in">source</span> ~/.bashrc</span><br><span class="line">$ npm -v</span><br><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+
+<h3 id="使用hexo，官网https-hexo-io-zh-cn-教程很详细"><a href="#使用hexo，官网https-hexo-io-zh-cn-教程很详细" class="headerlink" title="使用hexo，官网https://hexo.io/zh-cn/教程很详细"></a>使用hexo，官网<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/%E6%95%99%E7%A8%8B%E5%BE%88%E8%AF%A6%E7%BB%86">https://hexo.io/zh-cn/教程很详细</a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line"><span class="comment">#修改_config.yml的配置注意空格,生成发布目录</span></span><br><span class="line">$ hexo generate</span><br><span class="line"><span class="comment">#public文件夹的文件就可提交到你开始设置项目里</span></span><br><span class="line"><span class="comment">#为了便于提交和管理，我删除了public目录，创建了一个window软连接</span></span><br><span class="line">$ <span class="built_in">rm</span> -r ./publc</span><br></pre></td></tr></table></figure>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">::-----------window <span class="built_in">cmd</span>-------</span><br><span class="line">::需要编码ANSI</span><br><span class="line">mklink /d C:\Users\root\Documents\Workspaces\blog\public  C:\Users\root\Documents\Workspaces\username.github.io</span><br><span class="line">::我也会把blog构建仓库提交到github，不然丢失挺麻烦的。</span><br></pre></td></tr></table></figure>
+
+<h3 id="新博文"><a href="#新博文" class="headerlink" title="新博文"></a>新博文</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;在GITHUB搭建BLOG&quot;</span></span><br></pre></td></tr></table></figure>
+<p>   以上只是使用了最基本的操作，许多高级功能等待去发掘，比如自动部署等。</p>
+<p>接下在可以愉快的发博客了。。。。。。。。。。。。。。</p>
+
+      </div>
+      
+      
+      
+    </div>
+    
+
+    
+    
+    
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85git"><span class="nav-number">1.</span> <span class="nav-text">安装git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8E%BBgithub-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%EF%BC%8C%E9%A1%B9%E7%9B%AE%E5%91%BD%E5%90%8D%E6%A0%BC%E5%BC%8F%E5%BF%85%E9%A1%BB%E9%81%B5%E5%AE%88%EF%BC%9Ausername-github-io%EF%BC%8Cusername%E6%98%AF%E4%BD%A0%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D%E3%80%82%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AAindex%E9%A1%B5%E9%9D%A2%EF%BC%8C"><span class="nav-number">2.</span> <span class="nav-text">去github 创建项目，项目命名格式必须遵守：username.github.io，username是你的用户名。添加一个index页面，</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Hexo-%E9%9C%80%E8%A6%81node-js"><span class="nav-number">3.</span> <span class="nav-text">安装Hexo,需要node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8hexo%EF%BC%8C%E5%AE%98%E7%BD%91https-hexo-io-zh-cn-%E6%95%99%E7%A8%8B%E5%BE%88%E8%AF%A6%E7%BB%86"><span class="nav-number">4.</span> <span class="nav-text">使用hexo，官网https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;教程很详细</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E5%8D%9A%E6%96%87"><span class="nav-number">5.</span> <span class="nav-text">新博文</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name"></p>
+  <div class="site-description" itemprop="description">LIFE IS MEANINGLESS</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"></span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
