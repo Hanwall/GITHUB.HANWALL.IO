@@ -13,7 +13,7 @@ tags:
 
 ------
 
-#  PERSONAL LINKS
+# PERSONAL LINKS
 
 [BLOG @ CNBLOGS](https://www.cnblogs.com/galoisfield)
 
@@ -29,6 +29,8 @@ tags:
 
 [GITHUB @ GITHUB](https://github.com/Hanwall/)
 
+[INDEX PAGE @ GITHUB](./hanwall.github.io)
+
 [WORKFLOWS4COMPANY @GITHUB](./WORKFLOWS4COMPANY)
 
 ------
@@ -36,3 +38,7 @@ tags:
 # OTHERS
 
 [get_KNOWLEDGE4JASONZHANG @GITHUB](./get_KNOWLEDGE)
+
+[get_WORKSTYLE4MYSELF @GITHUB](./get_WORKSTYLE)
+
+[get_LIFESTYLE4MYSELF @GITHUB](./get_LIFESTYLE)
