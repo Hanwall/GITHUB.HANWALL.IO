@@ -21,17 +21,17 @@ tags:
 
 [BLOG @ OSCHIAN](https://my.oschina.net/galoisfield)
 
-[INFORMATION4ERROR @ ZHIHU](https://www.zhihu.com/people/Username_)
+[BLOG @ ZHIHU](https://www.zhihu.com/people/Username_)
 
 ------
 
-# PROJECT
+# INDEX
 
 [GITHUB @ GITHUB](https://github.com/Hanwall/)
 
 [INDEX PAGE @ GITHUB](./hanwall.github.io)
 
-[WORKFLOWS4COMPANY @GITHUB](./WORKFLOWS4COMPANY)
+
 
 ------
 
@@ -42,3 +42,5 @@ tags:
 [get_WORKSTYLE4MYSELF @GITHUB](./get_WORKSTYLE)
 
 [get_LIFESTYLE4MYSELF @GITHUB](./get_LIFESTYLE)
+
+[WORKFLOWS4COMPANY @GITHUB](./WORKFLOWS4COMPANY)
