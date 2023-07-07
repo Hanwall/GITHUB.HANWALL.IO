@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: LIFE STYLE
+title: INDEX SITE
 subtitle: ''
-description: 'LIFE IS MEANINGLESS'
+description: '缤纷世界，不生不灭'
 keywords:
 author: NULL
-language: 
+language: zh-CN # 主题语言
 timezone: ''
 
 # URL
