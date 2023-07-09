@@ -23,7 +23,7 @@ tags:
 
 [GITHUB @ GITHUB](https://github.com/Hanwall/)
 
-[INDEX PAGE @ GITHUB](./hanwall.github.io)
+[INDEX PAGE @ GITHUB](/hanwall.github.io)
 
 
 
@@ -33,9 +33,9 @@ tags:
 
 [get_KNOWLEDGE @GITHUB](/get_KNOWLEDGE)
 
-[get_WORKSTYLE4MYSELF @GITHUB](/get_WORKSTYLE)
+[get_WORKSTYLE @GITHUB](/get_WORKSTYLE)
 
-[get_LIFESTYLE4MYSELF @GITHUB](/get_LIFESTYLE)
+[get_LIFESTYLE @GITHUB](/get_LIFESTYLE)
 
 
 ----
