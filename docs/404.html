@@ -28,8 +28,8 @@
 <meta property="og:description" content="这是一个不存在的页面对不起，您所访问的页面不存在或者已删除。 预计将在约 10 秒后返回首页。 当然，你可以 点这里 直接返回首页。   let countTime &#x3D; 10; let url ; function count() {   document.getElementById(&#39;timeout&#39;).textContent &#x3D; countTime;   countTime -&#x3D; 1;">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gitcode.net/GaloisField/WORKFLOWS4COMPANY/-/raw/master/resources/pic/logo/404_3.jpeg">
-<meta property="article:published_time" content="2023-05-21T11:05:13.000Z">
-<meta property="article:modified_time" content="2023-05-21T11:05:13.000Z">
+<meta property="article:published_time" content="2023-07-09T16:57:10.000Z">
+<meta property="article:modified_time" content="2023-07-09T16:57:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://gitcode.net/GaloisField/WORKFLOWS4COMPANY/-/raw/master/resources/pic/logo/404_3.jpeg">
 
@@ -172,7 +172,7 @@
       <div class="post-body">
           <h2 id="这是一个不存在的页面"><a href="#这是一个不存在的页面" class="headerlink" title="这是一个不存在的页面"></a>这是一个不存在的页面</h2><p>对不起，您所访问的页面不存在或者已删除。</p>
 <p>预计将在约 <span id="timeout">10</span> 秒后返回首页。</p>
-<p>当然，你可以 <strong><a href="https://hanwall.github.io/">点这里</a></strong> 直接返回首页。</p>
+<p>当然，你可以 <strong><a href="https://hanwall.github.io/about">点这里</a></strong> 直接返回首页。</p>
 <p><img src="https://gitcode.net/GaloisField/WORKFLOWS4COMPANY/-/raw/master/resources/pic/logo/404_3.jpeg"></p>
 <script>
 let countTime = 10;
@@ -181,11 +181,10 @@ function count() {
   document.getElementById('timeout').textContent = countTime;
   countTime -= 1;
   if(countTime === 0){
-    if (location.href.match("WORKFLOWS4COMPANY") == null){
-        url = location.protocol+"//"+location.host;
-    }else{
-        url = location.protocol+"//"+location.host+'/WORKFLOWS4COMPANY/';
-    }
+        
+        url = location.protocol+"//"+location.host+"/about/";
+    
+   
         location.href = url;
 }
   setTimeout(() => {
