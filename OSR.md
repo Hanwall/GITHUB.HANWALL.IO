@@ -1,4 +1,4 @@
-readme.md用来首页展示了所以新建RUN.md
+
 
 
 brew install node  //https://nodejs.org/zh-cn/download/releases
