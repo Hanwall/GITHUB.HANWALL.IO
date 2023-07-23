@@ -7,7 +7,7 @@ tags:
 # LIFE IS MEANINGLESS, JUST KEEP IT SIMPLE......
 
 
-![](../resources/hello.jpeg)
+![](../resources/LIFE.jpeg)
 
 
 
