@@ -8,7 +8,7 @@ tags:
 ------
 
 
-# INDEX SITES
+# INDEX 
 
 [get_KNOWLEDGE @GITHUB](/get_KNOWLEDGE)
 
