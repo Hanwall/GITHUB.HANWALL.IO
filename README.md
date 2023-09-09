@@ -2,7 +2,7 @@
 
 https://hexo.io/zh-cn/
 
-# OS RUNTIME  VERSION
+# OS & RUNTIME  VERSION
 
 admindeMBP:~ admin$ uname -a
 Darwin admindeMBP.lan 16.7.0 Darwin Kernel Version 16.7.0: Thu Jun 15 17:36:27 PDT 2017; root:xnu-3789.70.16~2/RELEASE_X86_64 x86_64
@@ -34,7 +34,7 @@ unicode: 14.0
 
 
 
-# PROJECT DEV/BUILD
+# PROJECT RUN & BUILD
 
 
 brew install node  //https://nodejs.org/zh-cn/download/releases
@@ -52,7 +52,7 @@ config themes   https://theme-next.org/index.html
 hexo post  文章
 
 
-hexo serve 
+hexo serve   hexo s 
 
 
-hexo generate
+hexo generate   hexo g
