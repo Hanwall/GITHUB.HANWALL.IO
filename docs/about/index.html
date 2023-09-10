@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"hanwall.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="INDEXget_KNOWLEDGE @GITHUB get_WORKSTYLE @GITHUB get_LIFESTYLE @GITHUB">
+  <meta name="description" content="project base on link    index Project hexo 本站   get_KNOWLEGE docsify get_KNOWLEDGE @GITHUB   get_WORKSTYLE vuepress get_WORKSTYLE @GITHUB   get_LIFESTYLE Docusaurus get_LIFESTYLE @GITHUB">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ABOUT">
 <meta property="og:url" content="https://hanwall.github.io/about/index.html">
 <meta property="og:site_name" content="INDEX SITE">
-<meta property="og:description" content="INDEXget_KNOWLEDGE @GITHUB get_WORKSTYLE @GITHUB get_LIFESTYLE @GITHUB">
+<meta property="og:description" content="project base on link    index Project hexo 本站   get_KNOWLEGE docsify get_KNOWLEDGE @GITHUB   get_WORKSTYLE vuepress get_WORKSTYLE @GITHUB   get_LIFESTYLE Docusaurus get_LIFESTYLE @GITHUB">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-07-07T00:19:00.000Z">
-<meta property="article:modified_time" content="2023-09-08T19:08:45.000Z">
+<meta property="article:modified_time" content="2023-09-10T06:21:19.000Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://hanwall.github.io/about/">
@@ -169,9 +169,35 @@
       
       <div class="post-body">
           <hr>
-<h1 id="INDEX"><a href="#INDEX" class="headerlink" title="INDEX"></a>INDEX</h1><p><a href="/get_KNOWLEDGE">get_KNOWLEDGE @GITHUB</a></p>
-<p><a href="/get_WORKSTYLE">get_WORKSTYLE @GITHUB</a></p>
-<p><a href="/get_LIFESTYLE">get_LIFESTYLE @GITHUB</a></p>
+<table>
+<thead>
+<tr>
+<th>project</th>
+<th>base on</th>
+<th>link</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>index Project</td>
+<td>hexo</td>
+<td>本站</td>
+</tr>
+<tr>
+<td>get_KNOWLEGE</td>
+<td>docsify</td>
+<td><a href="/get_KNOWLEDGE">get_KNOWLEDGE @GITHUB</a></td>
+</tr>
+<tr>
+<td>get_WORKSTYLE</td>
+<td>vuepress</td>
+<td><a href="/get_WORKSTYLE">get_WORKSTYLE @GITHUB</a></td>
+</tr>
+<tr>
+<td>get_LIFESTYLE</td>
+<td>Docusaurus</td>
+<td><a href="/get_LIFESTYLE">get_LIFESTYLE @GITHUB</a></td>
+</tr>
+</tbody></table>
 <hr>
 
       </div>
@@ -234,7 +260,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#INDEX"><span class="nav-number">1.</span> <span class="nav-text">INDEX</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -276,13 +301,14 @@
 
 
 <div class="copyright">
+  <span id="sitetime"></span><br/>
   
   &copy; 
   <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder"></span><span id="sitetimenew"></span>
+  <span class="author" itemprop="copyrightHolder"></span>
 </div>
 <script language=javascript>
     function siteTime(){
@@ -317,7 +343,7 @@
         var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
         var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
         var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-        document.getElementById("sitetimenew").innerHTML=" 本站已运行 "+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+        document.getElementById("sitetime").innerHTML=" 本站已运行 "+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
     }
     siteTime();
 </script>
@@ -332,7 +358,7 @@
         <i class="fa fa-user"></i>
       </span>
       <span class="site-uv" title="总访客量">
-        总访客<span id="busuanzi_value_site_uv"></span>
+        总访客 :<span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
     <span class="post-meta-divider">|</span>
@@ -341,7 +367,7 @@
         <i class="fa fa-eye"></i>
       </span>
       <span class="site-pv" title="总访问量">
-        总访问量<span id="busuanzi_value_site_pv"></span>
+        总访问量 :<span id="busuanzi_value_site_pv"></span>
       </span>
     </span>
 </div>

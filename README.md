@@ -34,7 +34,7 @@ unicode: 14.0
 
 
 
-# PROJECT RUN & BUILD
+# PROJECT CONFIG & BUILD & RUN 
 
 
 brew install node  //https://nodejs.org/zh-cn/download/releases

@@ -1,1 +1,1 @@
-# error message lists
+# ERROR MESSAGE

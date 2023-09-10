@@ -272,13 +272,14 @@
 
 
 <div class="copyright">
+  <span id="sitetime"></span><br/>
   
   &copy; 
   <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder"></span><span id="sitetimenew"></span>
+  <span class="author" itemprop="copyrightHolder"></span>
 </div>
 <script language=javascript>
     function siteTime(){
@@ -313,7 +314,7 @@
         var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
         var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
         var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-        document.getElementById("sitetimenew").innerHTML=" 本站已运行 "+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+        document.getElementById("sitetime").innerHTML=" 本站已运行 "+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
     }
     siteTime();
 </script>
@@ -328,7 +329,7 @@
         <i class="fa fa-user"></i>
       </span>
       <span class="site-uv" title="总访客量">
-        总访客<span id="busuanzi_value_site_uv"></span>
+        总访客 :<span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
     <span class="post-meta-divider">|</span>
@@ -337,7 +338,7 @@
         <i class="fa fa-eye"></i>
       </span>
       <span class="site-pv" title="总访问量">
-        总访问量<span id="busuanzi_value_site_pv"></span>
+        总访问量 :<span id="busuanzi_value_site_pv"></span>
       </span>
     </span>
 </div>
