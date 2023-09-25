@@ -18,7 +18,10 @@
   <span itemprop="copyrightYear">{{ copyright_year }}</span>
   <span class="with-love">
     <i class="{{ theme.footer.icon.name }}"></i>
-  </span>
+  </span><br/>
+ <span>
+    <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="/resources/upyun_logos/又拍云_logo.png" style="width:300px; height:20px; display: inline-block;"></img></a>
+</span>
   <span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright or author }}</span>
   
   
@@ -44,6 +47,7 @@
     {%- endif %}
     <span title="{{ __('symbols_count_time.time_total') }}">{{ symbolsTimeTotal(site, config.symbols_count_time.awl, config.symbols_count_time.wpm, __('symbols_count_time.time_minutes')) }}</span>
   {%- endif %}
+  
 </div>
 <script language=javascript>
     function siteTime(){
@@ -100,5 +104,5 @@
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ theme.add_this_id }}" async="async"></script>
   </div>
 {%- endif %}
-
+ 
 {{- next_inject('footer') }}
